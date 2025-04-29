@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shree Consultancy</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="brand-name">Shree Consultancy</h1>
+      <p class="tagline">Simplifying Government Documentation for You</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <input type="text" id="serviceSearch" placeholder="Search services..." onkeyup="filterServices()">
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+  
+      <div class="service-item" onclick="togglePrice('rent-agreement')">
+        <h3>Rent Agreement </h3>
+        <p>Choose Notary or Registered Rent Agreement</p>
+        <div id="rent-agreement" class="price-details hidden">
+          <ul>
+            <li>Notarized – ₹1200</li>
+            <li>Registered – depends upon your requirement</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('udyog-adhar')">
+        <h3>Udyog Aadhar</h3>
+        <p>MSME Registration</p>
+        <div id="udyog-adhar" class="price-details hidden">
+          <ul>
+            <li>Registration – ₹499</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('gst')">
+        <h3>GST Registration & Return</h3>
+        <p>GST Registration & Monthly Filing</p>
+        <div id="gst" class="price-details hidden">
+          <ul>
+            <li>Registration – ₹2000</li>
+            <li>PT number – ₹1000</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('gazette')">
+        <h3>Gazette</h3>
+        <p>Name Change Publication</p>
+        <div id="gazette" class="price-details hidden">
+          <ul>
+            <li>Processing – ₹1450</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('company-reg')">
+        <h3>Company Registration</h3>
+        <p>Pvt Ltd / LLP / OPC</p>
+        <div id="company-reg" class="price-details hidden">
+          <ul>
+            <li>Starting – -</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('import-export')">
+        <h3>Import & Export Licence</h3>
+        <p>IEC Code Registration</p>
+        <div id="import-export" class="price-details hidden">
+          <ul>
+            <li>IEC Code – ₹3500</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('food-license')">
+        <h3>Food Licence</h3>
+        <p>FSSAI Basic/State/Central</p>
+        <div id="food-license" class="price-details hidden">
+          <ul>
+            <li>Call us</li>
+
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('pan-card')">
+        <h3>PAN Card</h3>
+        <p>New / Correction / Lost</p>
+        <div id="pan-card" class="price-details hidden">
+          <ul>
+            <li>New – ₹350</li>
+            <li>Correction – ₹350</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('shop-act')">
+        <h3>Shop Act</h3>
+        <p>Registration / Renewal</p>
+        <div id="shop-act" class="price-details hidden">
+          <ul>
+            <li>Lifetime – ₹499</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('income-tax')">
+        <h3>Income Tax</h3>
+        <p>Return Filing</p>
+        <div id="income-tax" class="price-details hidden">
+          <ul>
+            <li>income tax – ₹3500</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="service-item" onclick="togglePrice('partnership-deed')">
+        <h3>Partnership Deed</h3>
+        <p>Drafting and Registration</p>
+        <div id="partnership-deed" class="price-details hidden">
+          <ul>
+            <li>Deed Notary work – ₹1800</li>
+            <li>Deed Registration -₹6000</li>
+          </ul>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  
+  
+
+  <section id="about">
+    <h2>About the Founder</h2>
+    <div class="owner">
+      <p><strong>Sandeep Kulkarni</strong> <br/>
+      <span class="designation"></span>Tax Consultant</span></p>
+      <p><strong>Experience:</strong> 30+ years in government documentation services</p>
+      <p>Mr. Sandeep has been helping clients with legal and government paperwork for over a decade. Known for transparency and reliable service, he has built long-lasting relationships with hundreds of clients.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <p><strong>📍 Address:</strong><br>
+      Shop no.4/5, Suyash Chamber, Gandhi Peth, Chinchwadgaon-33</p>
+
+      <p><strong>📞 Phone:</strong> 9822498226</p>
+      <p><strong>💬 WhatsApp:</strong> 9226995389</p>
+      <p><strong>✉️ Email:</strong> shree.consultancy2005@gmail.com</p>
+      <a href="https://wa.me/919226995389" class="whatsapp-button" target="_blank">
+        💬 Chat on WhatsApp
+      </a>
+      
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form" action="https://formspree.io/f/movdjedz" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="_replyto" required>
+  
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+  
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>© 2025 Shree Consultancy. All Rights Reserved.</p>
+  </footer>
+  <script>
+    function togglePrice(serviceId) {
+      const allPrices = document.querySelectorAll('.price-details');
+      allPrices.forEach(price => price.style.display = 'none');
+  
+      const selectedPrice = document.getElementById(serviceId);
+      if (selectedPrice) {
+        selectedPrice.style.display = 'block';
+      }
+    }
+  </script>
+  <script>
+    function filterServices() {
+      const input = document.getElementById('serviceSearch').value.toLowerCase();
+      const items = document.querySelectorAll('.service-item');
+      items.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        item.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+    </script>
+    
+</body>
+</html>
