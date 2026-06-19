@@ -1,286 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+/* =========================
+   HEADER
+========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Inter',sans-serif;
-    background:#f8fafc;
-    color:#1e293b;
-    line-height:1.7;
-}
-
-/* CONTAINER */
-.container{
-    width:90%;
-    max-width:1250px;
-    margin:auto;
-}
-
-/* NAVBAR */
-nav{
-    background:#ffffff;
-    padding:22px 0;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    border-bottom:1px solid #e2e8f0;
-}
-
-nav .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:32px;
-    font-weight:700;
-    color:#0f172a;
-    font-family:'Playfair Display',serif;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#334155;
-    margin-left:35px;
-    font-weight:500;
-    transition:0.3s;
-    position:relative;
-}
-
-.nav-links a::after{
-    content:'';
-    width:0;
-    height:2px;
-    background:#2563eb;
-    position:absolute;
-    left:0;
-    bottom:-5px;
-    transition:0.3s;
-}
-
-.nav-links a:hover::after{
-    width:100%;
-}
-
-.nav-links a:hover{
-    color:#2563eb;
-}
-
-/* HERO */
 header{
-    padding:100px 0;
-    background:#ffffff;
-}
-
-.hero{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.hero-text h1{
-    font-size:62px;
-    line-height:1.1;
-    margin-bottom:25px;
-    color:#0f172a;
-    font-family:'Playfair Display',serif;
-}
-
-.hero-text p{
-    font-size:18px;
-    color:#475569;
-    margin-bottom:35px;
-}
-
-.hero-btn{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:16px 34px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.hero-btn:hover{
-    background:#1d4ed8;
-    transform:translateY(-3px);
-}
-
-.hero-image img{
-    width:100%;
-    border-radius:24px;
-    object-fit:cover;
-}
-
-/* SECTION */
-section{
-    padding:100px 0;
-}
-
-.section-title{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:#fff;
     text-align:center;
-    font-size:42px;
-    margin-bottom:70px;
-    color:#0f172a;
-    font-family:'Playfair Display',serif;
+    padding:80px 20px;
 }
 
-/* SERVICES */
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+.brand-name{
+    font-size:52px;
+    font-family:'Playfair Display',serif;
+    margin-bottom:12px;
+    font-weight:700;
+}
+
+.tagline{
+    font-size:20px;
+    color:#dbeafe;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     gap:35px;
 }
 
-.service-item{
-    background:white;
-    padding:40px;
-    border-radius:24px;
-    border:1px solid #e2e8f0;
-    transition:0.4s;
+nav a{
+    color:#334155;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
 }
 
-.service-item:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+nav a:hover{
+    color:#2563eb;
 }
 
-.service-item h3{
-    font-size:24px;
-    margin-bottom:18px;
-    color:#0f172a;
+/* =========================
+   SEARCH
+========================= */
+
+#serviceSearch{
+    display:block;
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
 }
 
-.service-item p{
-    color:#64748b;
+/* =========================
+   CONTACT BOX
+========================= */
+
+.contact-box{
+    line-height:2;
+    font-size:17px;
 }
 
-/* OWNER SECTION */
-.owner{
-    background:#0f172a;
-    color:white;
-    border-radius:30px;
-    padding:70px;
-    text-align:center;
-}
-
-.owner h3{
-    font-size:36px;
+.contact-box p{
     margin-bottom:15px;
 }
 
-.designation{
-    color:#cbd5e1;
-    font-size:18px;
+/* =========================
+   LINKEDIN SECTION
+========================= */
+
+#linkedin{
+    text-align:center;
+    padding:80px 20px;
+    background:#ffffff;
 }
 
-/* CONTACT */
-#contact{
-    background:white;
-    border-radius:30px;
-    padding:70px;
-    box-shadow:0 10px 40px rgba(0,0,0,0.05);
+#linkedin h2{
+    font-size:38px;
+    margin-bottom:15px;
+    color:#0f172a;
 }
 
-#contact-form input,
-#contact-form textarea{
-    width:100%;
-    padding:18px;
-    margin-bottom:24px;
-    border:1px solid #cbd5e1;
-    border-radius:14px;
-    font-size:16px;
-    font-family:'Inter',sans-serif;
+#linkedin p{
+    max-width:700px;
+    margin:auto;
+    color:#64748b;
+    margin-bottom:35px;
 }
 
-#contact-form textarea{
-    height:160px;
-    resize:none;
+.linkedin-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#0A66C2;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
 }
 
-#contact-form button{
-    width:100%;
-    background:#0f172a;
-    color:white;
-    border:none;
-    padding:18px;
-    border-radius:14px;
-    font-size:18px;
-    cursor:pointer;
-    transition:0.3s;
+.linkedin-btn:hover{
+    background:#004182;
+    transform:translateY(-3px);
 }
 
-#contact-form button:hover{
-    background:#1e293b;
-}
+/* =========================
+   FOOTER
+========================= */
 
-/* SEARCH */
-#serviceSearch{
-    width:100%;
-    padding:18px;
-    border-radius:14px;
-    border:1px solid #cbd5e1;
-    margin-bottom:50px;
-    font-size:16px;
-}
-
-/* FOOTER */
 footer{
     background:#0f172a;
-    color:#cbd5e1;
-    text-align:center;
-    padding:35px;
-    margin-top:100px;
-}
-
-/* WHATSAPP */
-.whatsapp-button{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    background:#25D366;
     color:white;
-    width:60px;
-    height:60px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:50%;
-    text-decoration:none;
-    font-size:28px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    padding:45px;
+    text-align:center;
 }
 
-/* MOBILE */
-@media(max-width:900px){
+.social-icons{
+    margin-top:20px;
+}
 
-    .hero{
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    width:45px;
+    height:45px;
+
+    margin:0 10px;
+
+    border-radius:50%;
+
+    background:#1e293b;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#2563eb;
+    transform:translateY(-4px);
+}
+
+/* =========================
+   PRICE DETAILS
+========================= */
+
+.price-details{
+    display:none;
+    margin-top:18px;
+    background:#eff6ff;
+    padding:18px;
+    border-radius:12px;
+}
+
+.price-details ul{
+    padding-left:18px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .brand-name{
+        font-size:36px;
+    }
+
+    .tagline{
+        font-size:16px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        gap:18px;
+        padding:15px;
+    }
+
+    .service-grid{
         grid-template-columns:1fr;
     }
 
-    .hero-text h1{
-        font-size:42px;
+    .owner{
+        padding:35px 20px;
     }
 
-    nav .container{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    .nav-links a{
-        margin:0 12px;
-    }
-
-    .owner,
     #contact{
         padding:40px 25px;
     }
+
 }
